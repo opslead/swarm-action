@@ -1,0 +1,25 @@
+name: swarm-deploy-action
+author: opslead
+description: A GitHub Action that enables you to publish your app as a Docker stack to a remote Docker swarm.
+inputs:
+  remote_host:
+    description: Docker host to connect to
+    required: true
+  remote_user:
+    description: Docker host username
+    required: false
+  ssh_private_key:
+    description: SSH private key to use to connect
+    required: true
+  registry_username:
+    description: Docker Registry username
+    required: false
+  registry_password:
+    description: Docker Registry password
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: upload
+  color: blue
