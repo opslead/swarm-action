@@ -8,7 +8,7 @@ Below is a brief example on how the action can be used:
 
 ```yaml
 - name: Deploy to swarm
-  uses: oplead/swarm-action@v1
+  uses: opslead/swarm-action@v1
   with:
     remote_host: swarm.server.com
     ssh_private_key: ${{ secrets.DOCKER_SSH_PRIVATE_KEY }}
